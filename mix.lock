@@ -1,0 +1,7 @@
+%{
+  "erlavro": {:hex, :erlavro, "2.9.3", "673fd6c131cc39de36858648efd544e7958c5aea8ba18e278fc682502aae39e2", [:make, :rebar, :rebar3], [{:jsone, "1.4.6", [hex: :jsone, repo: "hexpm", optional: false]}], "hexpm", "4b02a8ddfa4ef84a23c0d216cfb60c54b6a7f0d1040ac9c92dff3f6485a7fb9f"},
+  "file_system": {:hex, :file_system, "0.2.10", "fb082005a9cd1711c05b5248710f8826b02d7d1784e7c3451f9c1231d4fc162d", [:mix], [], "hexpm", "41195edbfb562a593726eda3b3e8b103a309b733ad25f3d642ba49696bf715dc"},
+  "jason": {:hex, :jason, "1.2.2", "ba43e3f2709fd1aa1dce90aaabfd039d000469c05c56f0b8e31978e03fa39052", [:mix], [{:decimal, "~> 1.0 or ~> 2.0", [hex: :decimal, repo: "hexpm", optional: true]}], "hexpm", "18a228f5f0058ee183f29f9eae0805c6e59d61c3b006760668d8d18ff0d12179"},
+  "jsone": {:hex, :jsone, "1.4.6", "644d6d57befb22c8e19b324dee19d73b1c004565009861a8f64c68b7b9e64dbf", [:rebar3], [], "hexpm", "78eee8bb38f0bee2e73673d71bc75fc6fb01f56f0d23e769a26eee3655487a38"},
+  "mix_test_watch": {:hex, :mix_test_watch, "1.0.2", "34900184cbbbc6b6ed616ed3a8ea9b791f9fd2088419352a6d3200525637f785", [:mix], [{:file_system, "~> 0.2.1 or ~> 0.3", [hex: :file_system, repo: "hexpm", optional: false]}], "hexpm", "47ac558d8b06f684773972c6d04fcc15590abdb97aeb7666da19fcbfdc441a07"},
+}
