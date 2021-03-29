@@ -26,7 +26,7 @@ defmodule Avrocado.MixProject do
       {:erlavro, "~> 2.9"},
       {:stream_split, github: "tallakt/stream_split"},
       {:mix_test_watch, "~> 1.0", only: :test},
-      {:benchee, "~> 1.0"}
+      {:benchee, "~> 1.0", only: :dev}
     ]
   end
 end
