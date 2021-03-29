@@ -1,13 +1,14 @@
-defmodule Avro.MixProject do
+defmodule Avrocado.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :avro,
+      app: :avrocado,
       version: "0.1.0",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      preferred_cli_env: ["test.watch": :test]
     ]
   end
 
@@ -23,7 +24,9 @@ defmodule Avro.MixProject do
     [
       {:jason, "~> 1.2"},
       {:erlavro, "~> 2.9"},
-      {:mix_test_watch, "~> 1.0"}
+      {:stream_split, github: "tallakt/stream_split"},
+      {:mix_test_watch, "~> 1.0", only: :test},
+      {:benchee, "~> 1.0"}
     ]
   end
 end
