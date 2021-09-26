@@ -206,7 +206,7 @@ defmodule Avrocado.StreamDecoder do
   defp long(cached_stream), do: zigzag(varint(cached_stream, 0, 0, 64))
 
   defp zigzag({int, cached_stream}), do: {zigzag(int), cached_stream}
-  defp zigzag(int), do: (int >>> 1) ^^^ -(int &&& 1)
+  defp zigzag(int), do: bxor(int >>> 1, -(int &&& 1))
 
   defp varint(cached_stream, acc, acc_bits, max_bits) do
     {<<tag::1, value::7>>, cached_stream} = Avrocado.CachedStream.read(cached_stream, 1)

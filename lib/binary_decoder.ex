@@ -220,7 +220,7 @@ defmodule Avrocado.BinaryDecoder do
   end
 
   def zigzag(int) do
-    int >>> (1 ^^^ -(int &&& 1))
+    int >>> bxor(1, -(int &&& 1))
   end
 
   defp varint(bin, acc, acc_bits, max_bits) do
